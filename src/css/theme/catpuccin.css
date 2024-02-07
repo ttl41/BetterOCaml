@@ -1,0 +1,59 @@
+/* Material theme */
+:root {
+    /* Editor color */
+        --ui-text-color:#c6d0f5;
+        --resizer-bg-color:#414559;
+        --toplevel-bg-color: #303446;
+        /* Help*/
+        --help-bg-color: #292c3c;
+        --help-margin-color: #292c3c;
+        /* Nav */
+        --nav-bg-color: #232634;
+        --nav-unselected-tab-bg-color: #292c3c;
+        --nav-unselected-tab-text-color: #b5bfe2;
+        --nav-selected-tab-bg-color: #414559;
+        --nav-selected-tab-text-color: c6d0f5;
+        --nav-close-btn-bg-color:#51576d;
+        /* Editor */
+        --editor-bg-color: #303446;
+        --editor-gutter-bg-color: #303446;
+        --editor-gutter-text-color: #7ea5b7;
+        --editor-cursor-color: #c6d0f5;
+        --editor-selection-bg-color: rgba(181, 191, 226, .2);
+        --editor-code-highlight-color: #3849519c;
+        /* Scrollbar */
+        --scrollbar-bg-color: #292c3c;
+        --scrollbar-track-color: #2a3439;
+        /* Preloader */
+        --preloader-bg-color: #303446;
+        --preloader-progress-bar-color: white;
+        /* Form */
+        --form-dropdown-bg-color: #252d32fc;
+        --form-dropdown-text-color: #c5d0f5;
+        --form-switch-border-color:#546e7a;
+        --form-button-bg-color:#292c3c;
+        --action-button: #37474f;
+
+    /* Code color */
+    --code-text-color: #c6d0f5;
+    --code-caml:rgb(110, 110, 201);
+    --code-error:#e78284;
+    --code-string:#a6d189;
+    --code-number:#ef9f76;
+    --code-constant:#ef9f76;
+    --code-keyword:#ca9ee6;
+    --code-operator:#f2d5cf;
+    --code-variable:#ea999c;
+    --code-builtin:#81c8be;
+    --code-atom:#c6d0f5;
+    --code-def:#EB00FF;
+    --code-comment:#a5adce;
+    --code-brackets:#e5c890;
+    --code-escape:#409290;
+    --code-symbol:#99d1db;
+    --code-tag:#ff5370;
+    --code-meta:#ffcb6b;
+    --code-attribute:#c6d0f5;
+    --code-qualifier: #81c8be;
+
+}

@@ -1,0 +1,58 @@
+/* Gruvbox theme */
+:root {
+    /* Editor color */
+    --ui-text-color:#ebdbb2;
+    --resizer-bg-color:#584945;
+    --toplevel-bg-color: #282828;
+    /* Help*/
+    --help-bg-color: #1d2021; /*bgh*/
+    --help-margin-color: #21221d;
+    /* Nav */
+    --nav-bg-color: #1d2021;
+    --nav-unselected-tab-bg-color: #1d2021;
+    --nav-unselected-tab-text-color: #d5c4a1;
+    --nav-selected-tab-bg-color: #3c3836;
+    --nav-selected-tab-text-color: #ebdbb2;
+    --nav-close-btn-bg-color:#584945;
+    /* Editor */
+    --editor-bg-color: #282828;
+    --editor-gutter-bg-color:#3c3836;
+    --editor-gutter-text-color:#d0d0d0;
+    --editor-cursor-color: #ebdbb2;
+    --editor-selection-bg-color: rgba(73, 72, 62, .99);
+    --editor-code-highlight-color: #3c3836;
+    /* Scrollbar */
+    --scrollbar-bg-color: #21221d;
+    --scrollbar-track-color: #2a2b25;
+    /* Preloader */
+    --preloader-bg-color: #282828;
+    --preloader-progress-bar-color: white;
+    /* Form */
+    --form-dropdown-bg-color: #282828;
+    --form-dropdown-text-color: #ebdbb2;
+    --form-switch-border-color: #515348;
+    --form-button-bg-color:#584945;
+    --action-button: #665c54;
+
+    /* Code color */
+    --code-text-color: #ebdbb2;
+    --code-caml:rgb(110, 110, 201);
+    --code-error:#cc241d;
+    --code-string:#b8bb26;
+    --code-number:#d3869b;
+    --code-constant:#66d9ef;/**/
+    --code-keyword:#fb4934;
+    --code-operator:#fb4934;
+    --code-variable:#ebdbb2;
+    --code-builtin:#8ec87c;
+    --code-atom:#83a598;
+    --code-def:#fe8019;
+    --code-comment:#928374;
+    --code-brackets:#d3869b;
+    --code-escape:#83a598;
+    --code-symbol:#ebdbb2;
+    --code-tag:#d3869b;
+    --code-meta:#fabd2f;
+    --code-attribute:#ebdbb2;
+    --code-qualifier: #ebdbb2;
+}

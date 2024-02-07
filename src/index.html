@@ -72,7 +72,7 @@
     <div id="loader" class="container">
         <img alt="Betterocaml Splash" src="icon/banner.png">
         <h2 class="center white-text">Loading OwOCaml Interpreter</h2>
-        <p class="center white-text">Go to <b>settings</b> for custom themes! ...</p>
+        <p class="center white-text">In settings, you can set custom backgrounds!</p>
         <div class="progress">
             <div class="indeterminate"></div>
         </div>
@@ -138,7 +138,8 @@
         <div class="config-section">
             Theme :
             <select name="theme" id="theme-select" class="config-element theme-select">
-                <option value="material">Default (Monokai)</option>
+                <option value="material">Default (Material)</option>
+                <option value="uwu">uwu</option>
                 <option value="gruvbox">Gruvbox Dark</option>
                 <option value="catpuccin">Catpuccin Frappe</option>
                 <option value="monokai">Monokai</option>
@@ -165,6 +166,24 @@
                 "/>
                     <span>Autocomplete</span>
                 </label>
+            </p>
+
+            <p class="config-element">
+            <label>
+<span>Use image background URL</span>
+
+            </label>
+
+<label>
+<input type="text" id="imageUrlInput">
+</label>
+<button id="saveImageUrlButton"
+        onclick="
+            const imageUrlInput = document.getElementById('imageUrlInput');
+    const imageUrl = imageUrlInput.value;
+        change_configuration('image-background-url', imageUrl, editors); updateBG();">
+        Save</button>
+
             </p>
 
             <div class="zoom-option config-element">
@@ -395,6 +414,13 @@
                 change_configuration('betterocaml-theme', e.target.value, editors);
             }, false);
 
+    // TTL IMAGE URL CODE
+      if (localStorage.getItem("image-background-url") !== null) {
+        document.getElementById("imageUrlInput").value = localStorage.getItem("image-background-url");
+        } 
+          
+  updateBG();
+
     // Autotarget the console
     document.getElementById("toplevel-container").addEventListener("click", (event) => {
         if (event.target === event.currentTarget) document.getElementById('userinput').focus();
@@ -403,6 +429,14 @@
     // Shortcut for Mac
     document.querySelector(':root').style.setProperty('--shortcut_system', /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)?`"Cmd"`:`"Ctrl"`);
 
+
+  function updateBG() {
+        const imageUrl = (localStorage.getItem("image-background-url"));
+        const codeMirrorElements = document.getElementsByClassName("CodeMirror");
+        for (let i = 0; i < codeMirrorElements.length; i++) {
+            codeMirrorElements[i].style.backgroundImage = `url('${imageUrl}')`;
+    }
+  }
 
 </script>
 

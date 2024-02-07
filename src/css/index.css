@@ -258,6 +258,8 @@ nav i, nav i.material-icons {
 /* EDITOR */
 
 .CodeMirror {
+    background-size:cover !important;
+    background-blend-mode: overlay;
     height: 100% !important;
     width: 100% !important;
 }
